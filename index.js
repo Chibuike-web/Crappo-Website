@@ -2,8 +2,8 @@ const menu = document.querySelector(".menu");
 const mobileNav = document.querySelector(".mobile_nav");
 const closenav = document.querySelector(".mobile_nav_close");
 const cards = document.querySelectorAll(".card");
-const arrow = document.querySelector(".arrow");
-const miningButton = document.querySelector(".mining");
+const arrows = document.querySelectorAll(".arrow");
+const miningButtons = document.querySelectorAll(".mining");
 
 const body = document.body;
 menu.addEventListener("click", (e) => {
@@ -23,4 +23,8 @@ cards.forEach((card, index) => {
 		});
 		card.classList.add("active");
 	});
+});
+
+cards.forEach((card, index) => {
+	card.addEventListener("click", () => {});
 });

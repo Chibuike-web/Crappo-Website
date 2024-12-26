@@ -1017,6 +1017,14 @@ nav .nav__container .nav__links .navbar-buttons .divider {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 600px) {
+  .footer-extra-icons {
+    gap: 1rem;
+  }
+}
+.footer-extra-icons figure img {
+  width: 100%;
+}
 .footer-content {
   grid-column: 1/-1;
   display: flex;

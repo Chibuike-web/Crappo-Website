@@ -1061,6 +1061,15 @@ nav {
 			width: 100%;
 			display: flex;
 			justify-content: space-between;
+			@include breakpoint(small) {
+				gap: 1rem;
+			}
+
+			figure {
+				img {
+					width: 100%;
+				}
+			}
 		}
 	}
 
