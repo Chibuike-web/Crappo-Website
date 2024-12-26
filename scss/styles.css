@@ -422,6 +422,7 @@ nav .nav__container .nav__links .navbar-buttons .divider {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+  padding-inline: 1rem;
 }
 .feature_section-wrapper p {
   width: 100%;
@@ -438,6 +439,7 @@ nav .nav__container .nav__links .navbar-buttons .divider {
   align-items: center;
   justify-content: center;
   padding-block-end: 6.25rem;
+  padding-inline: 1rem;
 }
 .more_features-container {
   color: hsl(240, 54%, 11%);
@@ -451,12 +453,24 @@ nav .nav__container .nav__links .navbar-buttons .divider {
   width: min(100%, 58.875rem);
   box-shadow: 0rem 4rem 2.5rem 0rem rgba(57, 23, 119, 0.08);
 }
+@media (max-width: 900px) {
+  .more_features-container {
+    padding: 1.5rem;
+  }
+}
 .more_features-container .form {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 6rem;
   gap: 3rem;
+}
+@media (max-width: 900px) {
+  .more_features-container .form {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }
 .more_features-container .form #hash-rate {
   outline: none;
@@ -465,6 +479,11 @@ nav .nav__container .nav__links .navbar-buttons .divider {
   padding-block: 0.625rem;
   height: auto;
   width: min(100%, 25.1875rem);
+}
+@media (max-width: 900px) {
+  .more_features-container .form #hash-rate {
+    width: 100%;
+  }
 }
 .more_features-container .form #hash-rate::-moz-placeholder {
   color: hsl(240, 54%, 11%);
@@ -485,8 +504,12 @@ nav .nav__container .nav__links .navbar-buttons .divider {
   border: none;
   border-bottom: 0.0625rem solid hsl(0, 0%, 88%);
   padding-block: 0.625rem;
-  height: auto;
   width: min(100%, 12.5rem);
+}
+@media (max-width: 900px) {
+  .more_features-container .form #th-s {
+    width: 100%;
+  }
 }
 .more_features-container .form #th-s::-moz-placeholder {
   color: hsl(240, 54%, 11%);
@@ -513,6 +536,11 @@ nav .nav__container .nav__links .navbar-buttons .divider {
   padding-block: 0.875rem;
   border-radius: 6.25rem;
   line-height: 1.5;
+}
+@media (max-width: 900px) {
+  .more_features-container .form button {
+    width: 100%;
+  }
 }
 .more_features-container .heading-1 {
   font-size: 1rem;
@@ -711,6 +739,7 @@ nav .nav__container .nav__links .navbar-buttons .divider {
   gap: 5.5rem;
   max-inline-size: 90rem;
   margin-inline: auto;
+  padding-inline: 1rem;
 }
 @media (max-width: 900px) {
   .wrapper .container .content-two {
@@ -731,6 +760,11 @@ nav .nav__container .nav__links .navbar-buttons .divider {
 .wrapper .container .content-two_right {
   max-inline-size: 40ch;
   padding-block-start: 2.5rem;
+}
+@media (max-width: 900px) {
+  .wrapper .container .content-two_right {
+    width: 100%;
+  }
 }
 .wrapper .container .content-two_right h3 {
   font-size: 2rem;
@@ -778,6 +812,11 @@ nav .nav__container .nav__links .navbar-buttons .divider {
   max-inline-size: 40ch;
   padding-block-start: 2.5rem;
 }
+@media (max-width: 900px) {
+  .wrapper .container .content-three_left {
+    width: 100%;
+  }
+}
 .wrapper .container .content-three_left h3 {
   font-size: 2rem;
   line-height: 1.5;
@@ -824,6 +863,11 @@ nav .nav__container .nav__links .navbar-buttons .divider {
 }
 @media (max-width: 900px) {
   .bottom-cta-container {
+    padding: 1.75rem 1.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .bottom-cta-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -850,11 +894,21 @@ nav .nav__container .nav__links .navbar-buttons .divider {
   line-height: 1.5;
   letter-spacing: 0.05em;
 }
+@media (max-width: 900px) {
+  .bottom-cta-content p {
+    text-align: center;
+  }
+}
 .bottom-cta-form {
   display: flex;
   gap: 2.5rem;
   width: 100%;
   max-width: 35.375rem;
+}
+@media (max-width: 900px) {
+  .bottom-cta-form {
+    flex-direction: column;
+  }
 }
 .bottom-cta-form input[type=email] {
   background-color: transparent;
@@ -864,6 +918,11 @@ nav .nav__container .nav__links .navbar-buttons .divider {
   width: 100%;
   max-width: 23.375rem;
   color: white;
+}
+@media (max-width: 900px) {
+  .bottom-cta-form input[type=email] {
+    max-width: 100%;
+  }
 }
 .bottom-cta-form input[type=email]::-moz-placeholder {
   color: white;
@@ -943,12 +1002,18 @@ nav .nav__container .nav__links .navbar-buttons .divider {
   width: 100%;
   max-width: 22.1875rem;
 }
+@media (max-width: 900px) {
+  .footer-extra {
+    max-width: 100%;
+  }
+}
 .footer-extra h3 {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.5;
 }
 .footer-extra-icons {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }

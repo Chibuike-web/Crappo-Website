@@ -461,6 +461,7 @@ nav {
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
+		padding-inline: 1rem;
 
 		p {
 			width: 100%;
@@ -480,6 +481,7 @@ nav {
 	align-items: center;
 	justify-content: center;
 	padding-block-end: 6.25rem;
+	padding-inline: 1rem;
 
 	&-container {
 		color: $primary;
@@ -493,12 +495,22 @@ nav {
 		width: min(100%, 58.875rem);
 		box-shadow: 0rem 4rem 2.5rem 0rem rgba(57, 23, 119, 0.08);
 
+		@include breakpoint(medium) {
+			padding: 1.5rem;
+		}
+
 		.form {
 			display: flex;
 			align-items: flex-end;
 			justify-content: space-between;
 			margin-bottom: 6rem;
 			gap: 3rem;
+
+			@include breakpoint(medium) {
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+			}
 
 			#hash-rate {
 				outline: none;
@@ -507,6 +519,10 @@ nav {
 				padding-block: 0.625rem;
 				height: auto;
 				width: min(100%, 25.1875rem);
+
+				@include breakpoint(medium) {
+					width: 100%;
+				}
 			}
 
 			#hash-rate::placeholder {
@@ -522,8 +538,11 @@ nav {
 				border: none;
 				border-bottom: 0.0625rem solid $grey5;
 				padding-block: 0.625rem;
-				height: auto;
 				width: min(100%, 12.5rem);
+
+				@include breakpoint(medium) {
+					width: 100%;
+				}
 			}
 
 			#th-s::placeholder {
@@ -546,6 +565,10 @@ nav {
 				padding-block: 0.875rem;
 				border-radius: 6.25rem;
 				line-height: 1.5;
+
+				@include breakpoint(medium) {
+					width: 100%;
+				}
 			}
 		}
 
@@ -586,6 +609,8 @@ nav {
 	}
 
 	.cards {
+		// max-inline-size: 75rem;
+		// margin-inline: auto;
 		display: flex;
 		justify-content: center;
 		align-items: stretch;
@@ -761,6 +786,7 @@ nav {
 			gap: 5.5rem;
 			max-inline-size: 90rem;
 			margin-inline: auto;
+			padding-inline: 1rem;
 
 			@include breakpoint(medium) {
 				display: flex;
@@ -782,6 +808,9 @@ nav {
 			&_right {
 				max-inline-size: 40ch;
 				padding-block-start: 2.5rem;
+				@include breakpoint(medium) {
+					width: 100%;
+				}
 
 				h3 {
 					font-size: 2rem;
@@ -829,6 +858,10 @@ nav {
 			&_left {
 				max-inline-size: 40ch;
 				padding-block-start: 2.5rem;
+
+				@include breakpoint(medium) {
+					width: 100%;
+				}
 
 				h3 {
 					font-size: 2rem;
@@ -879,6 +912,9 @@ nav {
 		align-items: center;
 		border-radius: 1rem;
 		justify-content: space-between;
+		@include breakpoint(medium) {
+			padding: 1.75rem 1.5rem;
+		}
 
 		@include breakpoint(medium) {
 			display: flex;
@@ -903,6 +939,9 @@ nav {
 		p {
 			line-height: 1.5;
 			letter-spacing: 0.05em;
+			@include breakpoint(medium) {
+				text-align: center;
+			}
 		}
 	}
 	&-form {
@@ -910,6 +949,9 @@ nav {
 		gap: 2.5rem;
 		width: 100%;
 		max-width: 35.375rem;
+		@include breakpoint(medium) {
+			flex-direction: column;
+		}
 
 		input[type="email"] {
 			background-color: transparent;
@@ -919,6 +961,9 @@ nav {
 			width: 100%;
 			max-width: 23.375rem;
 			color: white;
+			@include breakpoint(medium) {
+				max-width: 100%;
+			}
 		}
 
 		input[type="email"]::placeholder {
@@ -1003,12 +1048,17 @@ nav {
 		gap: 2.5rem;
 		width: 100%;
 		max-width: 22.1875rem;
+
+		@include breakpoint(medium) {
+			max-width: 100%;
+		}
 		h3 {
 			font-size: 2rem;
 			font-weight: 600;
 			line-height: 1.5;
 		}
 		&-icons {
+			width: 100%;
 			display: flex;
 			justify-content: space-between;
 		}
