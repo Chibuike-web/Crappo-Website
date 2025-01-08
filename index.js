@@ -20,13 +20,13 @@ cards.forEach((card, index) => {
 			c.classList.remove("active");
 			const miningButton = c.querySelector(".mining");
 			const arrow = c.querySelector(".arrow");
-			if (arrow) arrow.classList.remove("hide");
-			if (miningButton) miningButton.classList.add("hide");
+			arrow.classList.remove("hide");
+			miningButton.classList.add("hide");
 		});
 		card.classList.add("active");
 		const miningButton = card.querySelector(".mining");
-		if (miningButton) miningButton.classList.remove("hide");
 		const arrow = card.querySelector(".arrow");
-		if (arrow) arrow.classList.add("hide");
+		miningButton.classList.remove("hide");
+		arrow.classList.add("hide");
 	});
 });
